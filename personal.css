@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
+header {
+    background:#addfe9;
+    color: rgb(179, 8, 88);
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(16, 15, 16);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ed490d;
+}
+
+.home {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #ffff, #ffff);
+    color: rgb(24, 20, 20);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 50px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home span {
+    font-weight: bold;
+}
+
+.home img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: block;
+    border: 5px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+    background: white;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff5722;
+}
+
+footer {
+    background: #8bc1e2;
+    color: rgb(9, 8, 8);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer a {
+    color: rgb(21, 16, 16);
+    margin: 0 15px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff9800;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    section {
+        width: 95%;
+        padding: 30px;
+    }
+    
+    .home img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .social-links {
+        flex-direction: column;
+    }
+    
+    .social-links a {
+        font-size: 20px;
+    }
+    
+    footer a {
+        font-size: 20px;
+    }
+}
